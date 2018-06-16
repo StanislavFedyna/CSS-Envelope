@@ -5,9 +5,15 @@ body {
 .section {
   background-color: #fab1a0;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .envelope {
   position: relative;
@@ -19,9 +25,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
-  transform: translateY(-100%);
-  transform-origin: bottom;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
 }
 .envelope__body {
   position: absolute;
@@ -38,16 +50,23 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -50px;
-  transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   bottom: 0;
 }
 
 .envelope__top_close {
-    transform: translateY(-110%) rotateX(180deg);
+    -webkit-transform: translateY(-110%) rotateX(180deg);
+            transform: translateY(-110%) rotateX(180deg);
     z-index: 2;
 }
 .paper_close {
-  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+          transform: translateY(-10%);
   height: 40px;
 }
